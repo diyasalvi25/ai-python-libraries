@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Simple Admission Registration Form</title>
+</head>
+<body>
+<form>
+  <h2>Admission Registration</h2>
+  
+  <label for="name">Full Name *</label>
+  <input type="text" id="name" name="name" placeholder="Your full name" required />
+<label for="email">Email *</label>
+  <input type="email" id="email" name="email" placeholder="Your email address" required />
+  
+  <label>Gender *</label>
+  <div class="options">
+    <label><input type="radio" name="gender" value="male" required /> Male</label>
+    <label><input type="radio" name="gender" value="female" /> Female</label>
+    <label><input type="radio" name="gender" value="other" /> Other</label>
+  </div>
+  
+  <label for="course">Select Course *</label>
+  <select id="course" name="course" required>
+    <option value="" disabled selected>Select a course</option>
+    <option value="webdev">Web Development</option>
+    <option value="datasci">Data Science</option>
+    <option value="design">UI/UX Design</option>
+  </select>
+  
+  <label>Additional Interests:</label>
+  <div class="options">
+    <label><input type="checkbox" name="interest" value="workshop" /> Workshops</label>
+    <label><input type="checkbox" name="interest" value="mentorship" /> Mentorship</label>
+    <label><input type="checkbox" name="interest" value="networking" /> Networking</label>
+  </div>
+<label for="notes">Additional Notes</label>
+  <textarea id="notes" name="notes" rows="4" placeholder="Any additional information"></textarea>
+  
+  <button type="submit">Submit</button>
+</form>
+</body>
+</html>
